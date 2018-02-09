@@ -1,5 +1,10 @@
 " Javascript linting
 Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'sheerun/vim-polyglot'
+
+syntax on
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*

@@ -21,7 +21,6 @@ EOBUNDLES
 
 # Tracks your most used directories
 antigen bundle rupa/z
-add-zsh-hook precmd _z_precmd
 function _z_precmd {
     _z --add "$PWD"
 }
@@ -67,4 +66,5 @@ load-nvmrc() {
   fi
 }
 add-zsh-hook chpwd load-nvmrc
+add-zsh-hook precmd _z_precmd
 load-nvmrc
