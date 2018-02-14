@@ -182,9 +182,13 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
+assign [class="Firefox"] $ws2
+assign [class="jetbrains-idea"] $ws3
+assign [class="Slack"] $ws4
+assign [class="Geary"] $ws5
+# assign [class=""] $ws6
+assign [class="keepassxc"] $ws7
+assign [class="Spotify"] $ws8
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -284,6 +288,8 @@ exec --no-startup-id clipit
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id dropbox start
+
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always ~/.screenlayout/display.sh
