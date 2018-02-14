@@ -1,3 +1,8 @@
+" Remap keys
+inoremap jj <Esc>
+let mapleader = " "
+inoremap <leader>w <Esc>:w<cr>
+
 " Javascript linting
 Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'wakatime/vim-wakatime'
