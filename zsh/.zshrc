@@ -68,3 +68,6 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 add-zsh-hook precmd _z_precmd
 load-nvmrc
+
+alias i3cfg="vim ~/dotfiles/i3/.i3/config"
+export EDITOR=vim
