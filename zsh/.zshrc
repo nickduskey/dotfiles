@@ -19,7 +19,8 @@ zsh-users/zsh-syntax-highlighting
 
 EOBUNDLES
 
-# Tracks your most used directories
+# Tracks your most used directories, based on 'frecency'. And its accompanying
+# setup code.
 antigen bundle rupa/z
 add-zsh-hook precmd _z_precmd
 function _z_precmd {
@@ -68,3 +69,10 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+
+alias i3cfg="vim ~/dotfiles/i3/.i3/config"
+export EDITOR=vim
+
+# Go config
+export PATH=$PATH:/usr/local/go/bin
